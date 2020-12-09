@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-		.topnav {
+  <style type="text/css">
+    .topnav {
   background-color: #333;
   overflow: hidden;
 }
-	.topnav a {
+  .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -25,7 +25,7 @@
   color: white;
 }
 .main_txt {
-	position: absolute;
+  position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -43,37 +43,58 @@
 }
 @media screen and (max-width: 800px) {
   div.main_txt {
-  	top: 30%;
-  	left: 50%;
+    top: 30%;
+    left: 50%;
     
   }
 }
 @media screen and (max-width: 550px) {
   div.main_txt {
-  	top: 20%;
-  	left: 50%;
+    top: 20%;
+    left: 50%;
     
   }
 }
+.row {
+  display: flex;
+}
 
-	</style>
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+  </style>
 
 <title>
 KIRAN SHAJI AUGUSTINE
 </title>
 </head>
 <body style="background-color: #444444">
-	<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="contact.html">About</a>
+  <div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="#contact">About</a>
   <a href="#about">Contact</a>
 </div>
 <div>
-	<img src="images/main.jpg" width="100%">
-	<div class="main_txt">
-		<h1 align="center" class="title_resize">Kiran Shaji Augustine</h1>
-		<p align="center" class="body_resize">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. </p>
-	</div>
+  <img src="images/main.jpg" width="100%">
+  <div class="main_txt">
+    <h1 align="center" class="title_resize">About Me</h1>
+    <div class="row">
+  <div class="column">
+    <img src="images/developer.jpg" alt="Snow" style="width:80%">
+    <h4 align="center">DEVELOPER</h4>
+  </div>
+  <div class="column">
+    <img src="images/designer.jpg" alt="Forest" style="width:80%">
+    <h4 align="center">DESIGNER</h4>
+  </div>
+  <div class="column">
+    <img src="images/educationalist.jpg" alt="Mountains" style="width:80%">
+    <h4 align="center">EDUCATIONALIST</h4>
+  </div>
+</div>
+  </div>
 </div>
 <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Et odio pellentesque diam volutpat commodo sed. Turpis egestas sed tempus urna et. Facilisis sed odio morbi quis commodo odio aenean sed. Nisi scelerisque eu ultrices vitae auctor. Adipiscing elit duis tristique sollicitudin. Pulvinar elementum integer enim neque volutpat ac tincidunt.</p>
 </body>
